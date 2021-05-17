@@ -19,7 +19,7 @@ public class TrueTime {
     private static int _serverResponseDelayMax = 750;
     private static int _udpSocketTimeoutInMillis = 30_000;
 
-    private String _ntpHost = "1.us.pool.ntp.org";
+    private String _ntpHost = "time.google.com";
 
     /**
      * @return Date object that returns the current time in the default Timezone
