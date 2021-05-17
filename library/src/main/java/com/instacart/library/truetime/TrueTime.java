@@ -116,6 +116,10 @@ public class TrueTime {
         TrueLog.setLoggingEnabled(isLoggingEnabled);
         return INSTANCE;
     }
+    
+    public synchronized void requestTimeSync(String ntpHost) throws IOException {
+        requestTime(ntpHost);
+    }
 
     // -----------------------------------------------------------------------------------
 
