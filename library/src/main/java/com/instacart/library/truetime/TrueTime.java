@@ -117,8 +117,8 @@ public class TrueTime {
         return INSTANCE;
     }
     
-    public synchronized void requestTimeSync(String ntpHost) throws IOException {
-        requestTime(ntpHost);
+    public synchronized void requestTimeSync() throws IOException {
+        requestTime(_ntpHost);
     }
 
     // -----------------------------------------------------------------------------------
